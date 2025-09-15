@@ -46,7 +46,7 @@ Key fraud indicators include features V3, V12, V14, along with transaction amoun
 
 ## 7. Visualizations
 
-Detailed project visualizations can be found in the [VISUALIZATIONS.md](./VISUALIZATIONS.md) file.
+Detailed project visualizations can be found in the [VISUALIZATIONS.md](./Visualizations.md) file.
 
 Alternatively, view the `images/` directory for individual plot images.
 
