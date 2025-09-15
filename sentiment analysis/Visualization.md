@@ -5,7 +5,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 ## 1. Sentiment Distribution Analysis
 
 ### Bar Chart: Sentiment Distribution
-![Sentiment Distribution Bar Chart](sentiment_distribution_bar.png)
+![Sentiment Distribution Bar Chart](images/sentiment_distribution_bar.png)
 
 **Description**: This bar chart shows the absolute count of tweets across the three sentiment categories with distinct color coding:
 - Green: Positive sentiment (72,249 tweets)
@@ -15,7 +15,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 **Insights**: The visualization reveals a class imbalance with Positive sentiments dominating the dataset (44.3%), followed by Neutral (33.9%) and Negative (21.8%). This imbalance was addressed during model training through class weighting.
 
 ### Pie Chart: Sentiment Percentage Distribution
-![Sentiment Distribution Pie Chart](sentiment_distribution_pie.png)
+![Sentiment Distribution Pie Chart](images/sentiment_distribution_pie.png)
 
 **Description**: A pie chart displaying the percentage distribution of sentiments, using the same color scheme as the bar chart.
 
@@ -24,7 +24,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 ## 2. Text Length Analysis
 
 ### Histogram: Text Length Distribution by Sentiment
-![Text Length Distribution](text_length_distribution.png)
+![Text Length Distribution](images/text_length_distribution.png)
 
 **Description**: A histogram with Kernel Density Estimation (KDE) showing the distribution of tweet lengths (character count) across different sentiment categories. Each sentiment is represented with a different color and transparency for overlap visualization.
 
@@ -36,7 +36,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 ## 3. Word Cloud Visualizations
 
 ### Positive Sentiment Word Cloud
-![Positive Word Cloud](wordcloud_positive.png)
+![Positive Word Cloud](images/wordcloud_positive.png)
 
 **Visual Characteristics**: Features uplifting and supportive language with larger words indicating higher frequency.
 
@@ -49,7 +49,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 **Color Scheme**: Vibrant greens and positive colors, typically using the viridis colormap.
 
 ### Neutral Sentiment Word Cloud
-![Neutral Word Cloud](wordcloud_neutral.png)
+![Neutral Word Cloud](images/wordcloud_neutral.png)
 
 **Visual Characteristics**: Balanced word sizes indicating more diverse vocabulary without extreme frequency differences.
 
@@ -62,7 +62,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 **Color Scheme**: Neutral blues and balanced colors, typically using cooler tones.
 
 ### Negative Sentiment Word Cloud
-![Negative Word Cloud](wordcloud_negative.png)
+![Negative Word Cloud](images/wordcloud_negative.png)
 
 **Visual Characteristics**: Dominated by the extremely frequent repetition of "modi" indicating intense focus of criticism.
 
@@ -77,7 +77,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 ## 4. Model Performance Visualizations
 
 ### Model Accuracy Comparison
-![Model Accuracy Chart](model_accuracy_comparison.png)
+![Model Accuracy Chart](images/model_accuracy_comparison.png)
 
 **Description**: Bar chart comparing the weighted F1 scores of all tested models with error bars showing standard deviation from 3-fold cross-validation.
 
@@ -90,7 +90,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 **Insights**: Logistic Regression provided the best performance for this specific task and dataset.
 
 ### Model Training Time Comparison
-![Training Time Chart](training_time_comparison.png)
+![Training Time Chart](images/training_time_comparison.png)
 
 **Description**: Bar chart showing the computational efficiency of each algorithm with exact time annotations in seconds.
 
@@ -105,7 +105,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 ## 5. Final Model Evaluation Visualizations
 
 ### Confusion Matrix Heatmap
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](images/confusion_matrix.png)
 
 **Description**: Color-coded heatmap showing actual vs. predicted sentiment classifications with numerical annotations.
 
@@ -123,7 +123,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 **Color Scheme**: Blue gradient with darker colors indicating higher values.
 
 ### Multi-class ROC Curves
-![ROC Curves](roc_curves.png)
+![ROC Curves](images/roc_curves.png)
 
 **Description**: Receiver Operating Characteristic curves for each sentiment class showing the tradeoff between true positive rate and false positive rate at different classification thresholds.
 
@@ -135,7 +135,7 @@ This document provides detailed descriptions and analysis of all visualizations 
 **Insights**: Excellent discrimination ability across all classes, with Positive sentiment showing the best performance.
 
 ### Precision-Recall Curves
-![Precision-Recall Curves](precision_recall_curves.png)
+![Precision-Recall Curves](images/precision_recall_curves.png)
 
 **Description**: Precision-Recall curves for each class, particularly important for imbalanced datasets.
 
