@@ -143,7 +143,7 @@ The project generates comprehensive visualizations including:
 
 For complete details, analysis, and interpretation of all visualizations, please see the dedicated visualization document:
 
-**[Comprehensive Visualizations Analysis](VISUALIZATIONS.md)**
+**[Click here](Visualizations.md)**
 ---
 
 ## Installation Instructions
