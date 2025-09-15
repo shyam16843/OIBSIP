@@ -23,7 +23,7 @@ This repository contains all projects and tasks completed during my AI/ML intern
 - **Description**: Twitter sentiment analysis system classifying tweets into Positive, Neutral, and Negative categories using NLP preprocessing and machine learning models.
 - **Technologies**: Python, pandas, scikit-learn, NLTK, matplotlib, seaborn, wordcloud
 - **Status**: Completed ✅
-- [View Project](./senitment analysis/README.md)
+- [View Project](./sentiment analysis/README.md)
 
 ---
 
