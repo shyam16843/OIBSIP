@@ -11,7 +11,7 @@ This repository contains all projects and tasks completed during my AI/ML intern
 - **Description**: Linear regression model to predict median house prices using demographic and housing features.
 - **Technologies**: Python, Scikit-learn, Pandas, Matplotlib
 - **Status**: Completed ✅
-- [View Project](./customer-segmentation-project/README.md)
+- [View Project](./Customer-Segmentation-Project/README.md)
 
 ### Task 2: Credit Card Fraud Detection
 - **Description**: Fraud detection pipeline leveraging SMOTEENN resampling, ensemble models (Random Forest, XGBoost), and SHAP explainability.
