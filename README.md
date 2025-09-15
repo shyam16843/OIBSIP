@@ -11,19 +11,19 @@ This repository contains all projects and tasks completed during my AI/ML intern
 - **Description**: Linear regression model to predict median house prices using demographic and housing features.
 - **Technologies**: Python, Scikit-learn, Pandas, Matplotlib
 - **Status**: Completed ✅
-- [View Project](./customer-segmentation/README.md)
+- [View Project](./customer-segmentation-project/README.md)
 
 ### Task 2: Credit Card Fraud Detection
 - **Description**: Fraud detection pipeline leveraging SMOTEENN resampling, ensemble models (Random Forest, XGBoost), and SHAP explainability.
 - **Technologies**: Python, Scikit-learn, Imbalanced-learn, XGBoost, SHAP
 - **Status**: Completed ✅
-- [View Project](./fraud-detection/README.md)
+- [View Project](./fraud detection/README.md)
 
 ### Task 3: Sentiment Analysis
 - **Description**: Twitter sentiment analysis system classifying tweets into Positive, Neutral, and Negative categories using NLP preprocessing and machine learning models.
 - **Technologies**: Python, pandas, scikit-learn, NLTK, matplotlib, seaborn, wordcloud
 - **Status**: Completed ✅
-- [View Project](./sentiment-analysis/README.md)
+- [View Project](./sentiment analysis/README.md)
 
 ---
 
