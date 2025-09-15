@@ -19,11 +19,11 @@ This repository contains all projects and tasks completed during my AI/ML intern
 - **Status**: Completed ✅
 - [View Project](./fraud-detection/README.md)
 
-### Task 3: Other Project Name
-- **Description**: Add short description here.
-- **Technologies**: Add key tools used.
-- **Status**: In progress / Planned
-- [View Project](./task3-other-project/README.md)
+### Task 3: Sentiment Analysis
+- **Description**: Twitter sentiment analysis system classifying tweets into Positive, Neutral, and Negative categories using NLP preprocessing and machine learning models.
+- **Technologies**: Python, pandas, scikit-learn, NLTK, matplotlib, seaborn, wordcloud
+- **Status**: Completed ✅
+- [View Project](./senitment analysis/README.md)
 
 ---
 
@@ -33,7 +33,7 @@ This repository contains all projects and tasks completed during my AI/ML intern
 |-------|-----------------------------|-------------|-----------------|
 | 1     | Customer-Segmentation-Project | Completed ✅ | 2025-09-12      |
 | 2     | Credit Card Fraud Detection          | Completed ✅ | 2025-09-13      |
-| 3     | Other Project Name                   | In Progress | TBD             |
+| 3     | Sentiment Analysis                  | Completed ✅  | 2025-09-15              |
 
 ---
 

@@ -32,10 +32,4 @@ Highlights significant spending differences.
 Cluster differences in online shopping frequency.  
 ![Online Purchases Boxplot](images/figure_8.png)
 
-## 9. Outlier Detection - Recency
-Visual confirmation of no extreme outliers for recency.  
-![Recency Outliers](images/figure_9.png)
 
-## 10. Outlier Detection - Income
-Shows some high-income outliers mainly in high-value cluster.  
-![Income Outliers](images/figure_10.png)

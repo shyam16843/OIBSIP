@@ -12,43 +12,95 @@ Segment customers of an e-commerce company into distinct groups based on purchas
 - The original dataset is confidential and not included here. To run the code, replace `'ifood_df.csv'` in the script with a path to your dataset or a synthetically generated sample with similar columns.
 
 ## 3. Methodology
-- **Preprocessing:** Selected key behavioral features and applied standard scaling.  
-- **Clustering:** Used K-Means algorithm.  
-- **Cluster Number Selection:** Optimal number of clusters chosen using Elbow Method and Silhouette Scores, resulting in two distinct clusters.  
-- **Visualizations:** Pairplots, heatmaps, box plots, and parallel coordinates plots for cluster profiling and validation.
+- **Preprocessing:** Selected 13 key behavioral features and applied standard scaling.  
+- **Clustering:** Used K-Means algorithm with optimal cluster determination.  
+- **Cluster Number Selection:**  Optimal number of clusters (2) chosen using Elbow Method and Silhouette Scores. 
+- **Visualizations:**  Pairplots, heatmaps, box plots, and parallel coordinates plots for comprehensive cluster analysis.
 
 ## 4. Cluster Profiles
 ### Cluster 0 (High-Value Customers)
-- Higher Income and significantly greater spending on key products (wines, meat, etc.).  
-- Higher frequency of both online and in-store purchases.  
+- Higher Income and significantly greater spending across all product categories.
+- Higher frequency of purchases across web, catalog, and store channels.
 - Likely highly engaged, premium customer segment.
 
 ### Cluster 1 (Low-Value Customers)
-- Moderate to low income and spending.  
-- Less frequent purchases and lower engagement.  
+- Moderate to low income and spending across categories.
+- Less frequent purchases and lower engagement across all channels.
 - Represents budget-conscious or infrequent buyers.
 
 Both clusters showed similar Recency distribution, indicating time since last purchase was not a primary differentiator.
 
+### Key Features Used for Clustering:
+- Income, Recency
+- Spending: Wines, Fruits, Meat, Fish, Sweets, Gold products
+- Purchase channels: Deals, Web, Catalog, Store purchases
+- Web visits per month
+
+### Algorithms Used:
+- StandardScaler for feature normalization
+- KMeans for clustering
+- Silhouette Score and Elbow Method for optimal cluster determination
+
 ## 5. Business Implications
-- **High-Value Customers:** Target with loyalty rewards, premium offers, and upsell campaigns to maximize lifetime value.  
-- **Low-Value Customers:** Focus on conversion strategies, discounts, and engagement tactics to increase purchase frequency and retention.
 
-## 6. Overall Insights Uncovered
-- **Dominant Product Categories:** Liquor, Wine, and Beer lead total retail sales with strong seasonal patterns indicating clear consumer demand cycles.  
-- **Top Revenue Contributors:** A small number of key suppliers contribute the majority of sales, suggesting focused supplier management opportunities.  
-- **Seasonality and Demand Cycles:** Spikes in sales in January and July align with promotional or holiday periods, informing inventory and marketing planning.  
-- **Channel Interdependencies:** Correlation between sales channels reveals operational flow connections that can optimize supply chains.  
-- **Sales Variability and Outliers:** Significant variability highlights potential bulk purchases or data anomalies needing further analysis.  
-- **Trend Clarification:** Moving average smoothing aids in identifying reliable demand trends.  
-- **Anomaly Detection:** Flags unusual spikes signaling key business events or risks.
+### Cluster 0 (High-Value Customers)
+- **Target with premium strategies:** Loyalty programs, exclusive offers, and personalized recommendations
+- **Maximize lifetime value:** Upsell complementary products and introduce subscription models
+- **Retention focus:** Priority customer service and early access to new products
 
-## 7. Hidden Connections Revealed
-- Seasonal effects vary by product line and supplier, guiding tailored marketing and stocking policies.  
-- Sales channel correlations indicate logistic coordination potential.  
-- Diverse supplier behaviors identified via sales distribution plots.  
-- Anomaly detection segments normal vs exceptional sales cases.  
-- Temporal sales shifts indicate changing customer preferences.
+### Cluster 1 (Low-Value Customers)
+- **Acquisition and activation:** Welcome discounts, first-purchase incentives, and educational content
+- **Increase engagement:** Regular promotional campaigns and reminder emails for abandoned carts
+- **Budget-friendly options:** Highlight value products and bundle deals
+
+### Cross-Cluster Strategies
+- **Personalized marketing:** Tailor messaging based on spending patterns and product preferences
+- **Channel optimization:** Focus on preferred purchase channels for each segment
+- **Product recommendations:** Suggest items based on cluster-specific buying behaviors
+
+## 6. Key Insights from Customer Segmentation
+
+### Spending Patterns
+- **High-Value Cluster** shows significantly higher spending across all product categories, particularly wines and meat products
+- **Low-Value Cluster** demonstrates moderate spending with more balanced distribution across categories
+
+### Income and Behavior Correlation
+- Higher income strongly correlates with increased spending across all product categories
+- Income level is the primary differentiator between the two customer segments
+
+### Purchase Channel Preferences
+- Both clusters utilize multiple purchase channels (web, store, catalog)
+- High-value customers show slightly higher engagement across all channels
+
+### Recency Patterns
+- Time since last purchase (Recency) is similar across both clusters
+- Purchase recency is not a primary segmentation factor in this analysis
+
+### Behavioral Segmentation
+- The 2-cluster solution effectively separates customers based on overall engagement and spending capacity
+- Clear distinction enables targeted marketing strategies
+
+## 7. Hidden Relationships Discovered
+
+### Product Category Interdependencies
+- Customers who purchase wines are also likely to purchase meat products
+- Sweet products and gold products show different purchasing patterns across clusters
+
+### Channel Complementarity
+- Web purchases and store purchases show positive correlation
+- Customers use multiple channels rather than sticking to a single purchase method
+
+### Income-Driven Behavior
+- Income level is the strongest predictor of customer spending behavior
+- Higher income enables broader product experimentation and larger purchases
+
+### Purchase Frequency Patterns
+- Number of purchases correlates with total spending amount
+- Deal purchases are distributed differently across income segments
+
+### Customer Lifetime Value Indicators
+- Total spending (MntTotal) combined with purchase frequency serves as a strong CLV indicator
+- High-value cluster demonstrates characteristics of loyal, repeat customers
 
 ## 8. Future Work
 - Explore additional clustering algorithms such as hierarchical clustering or DBSCAN.  
